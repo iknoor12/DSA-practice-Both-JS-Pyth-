@@ -20,5 +20,36 @@ for word in wordList:
     else: 
         output[word] = 1
 
-print(output)
+# print(output)
 # Output: {"apple": 3, "banana": 2, "orange": 1}
+
+
+
+# 3. Iterating through a Dictionary: a dictionary of student scores, print each student's name and their score.
+scores = {
+    "John": 85, 
+    "Emily": 92, 
+    "David": 78
+}
+for stu in scores:
+    print(stu, scores[stu])
+
+# Another loop:
+# for stu, scr in scores.items():
+#     print(stu, scr)
+
+
+
+# 4. Creating a Dictionary from a List: given two lists, one for keys and one for values, create a single dictionary from these lists.
+keys = ["a", "b", "c"]
+values = [1, 2, 3]
+
+data = {}
+for a,b in zip(keys, values):
+    data[a] = b
+print(data)
+
+
+
+#  Intermediate
+# 1. 
