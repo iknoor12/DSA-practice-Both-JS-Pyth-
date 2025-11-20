@@ -28,3 +28,30 @@ def rotate(nums, k):
 nums = [1, 2, 3, 4, 5, 6, 7]
 k = 3 
 print(rotate(nums, k))
+
+
+# BY SIR
+
+# "Print all the even numbers from the given array.
+# Input:- [1, 4 ,5, 8, 10, 3], Output:- [4,8,10]"
+def evenNum(arr):
+    even = []
+    for i in range(len(arr)):
+        if arr[i] % 2 == 0:
+            even.append(arr[i])
+    return even
+
+arr = [1, 4, 5, 8, 10, 3]
+print(evenNum(arr))
+
+
+# "Find the Majority Element
+# Input:-[3, 3, 4, 2, 4, 4, 2, 4, 4], Output:- 4"
+def majorEle(arr):
+    for i in range(len(arr)-1):
+        if arr[i] > arr[i+1]:
+            maj = arr[i]
+    return maj
+
+arr = [3, 3, 4, 2, 4, 4, 2, 4, 4]
+print(majorEle(arr))
