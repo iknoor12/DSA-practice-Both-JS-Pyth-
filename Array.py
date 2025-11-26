@@ -9,7 +9,7 @@ def containsDuplicate(nums):
                 return True
 
 nums = [1, 2, 3, 1]
-print(containsDuplicate(nums))
+# print(containsDuplicate(nums))
 
 
 # Medium
@@ -27,7 +27,7 @@ def rotate(nums, k):
 
 nums = [1, 2, 3, 4, 5, 6, 7]
 k = 3 
-print(rotate(nums, k))
+# print(rotate(nums, k))
 
 
 # BY SIR
@@ -42,7 +42,7 @@ def evenNum(arr):
     return even
 
 arr = [1, 4, 5, 8, 10, 3]
-print(evenNum(arr))
+# print(evenNum(arr))
 
 
 # "Find the Majority Element
@@ -54,4 +54,24 @@ def majorEle(arr):
     return maj
 
 arr = [3, 3, 4, 2, 4, 4, 2, 4, 4]
-print(majorEle(arr))
+# print(majorEle(arr))
+
+
+# 1 question: Given an array, find the largest element in it.
+arr = [1, 2, 3, 4]
+x = 3
+if x in arr:
+    print("true")
+else:
+    print("false")
+
+
+
+# 2 question: Given a string s, return the index of the first character that does not repeat.If no such character exists, return -1.
+s = 'practice'
+for i in range(len(s)):
+    if s.count(s[i]) == 1:
+        print(i)
+        break
+else:
+    print("-1")
