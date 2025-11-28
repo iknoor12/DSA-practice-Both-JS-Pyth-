@@ -56,22 +56,3 @@ def majorEle(arr):
 arr = [3, 3, 4, 2, 4, 4, 2, 4, 4]
 # print(majorEle(arr))
 
-
-# 1 question: Given an array, find the largest element in it.
-arr = [1, 2, 3, 4]
-x = 3
-if x in arr:
-    print("true")
-else:
-    print("false")
-
-
-
-# 2 question: Given a string s, return the index of the first character that does not repeat.If no such character exists, return -1.
-s = 'practice'
-for i in range(len(s)):
-    if s.count(s[i]) == 1:
-        print(i)
-        break
-else:
-    print("-1")
