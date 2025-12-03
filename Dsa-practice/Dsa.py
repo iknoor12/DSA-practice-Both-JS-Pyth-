@@ -82,3 +82,55 @@ target = 9
 #         sum = nums[i] + nums[j]
 #         if sum == target:
 #             print(i, j)
+
+
+# 29 Nov
+# 1 question: "Find the second largest element in an array. 
+# Input: [3, 5, 2, 9, 7], Output: 7"
+arr = [3, 5, 2, 9, 7]
+arr.sort(reverse=True)
+# print(arr[1])
+
+
+# 2 question: "Check if two strings are anagrams (same letters, different order).
+# Input: ""listen"", ""silent"", Output: True"
+str1 = 'listen'
+str2 = 'silent'
+match = False
+for i in str1:
+    char = i
+    for j in str2:
+        if char == j:
+            match = True
+            break
+        else: 
+            match = False
+
+# if match == True:
+#     print("True")
+# else:
+#     print("False")
+
+
+
+# 30 Nov
+# 2 question: "Use Linear Search to find the number 7 in the array: [2, 4, 7, 1, 9], At which index is it found?"
+arr = [2, 4, 7, 1, 9]
+tar = 7
+# for i in range(len(arr)):
+#     if arr[i] == tar:
+#         print(i)
+
+
+# 3 question: "Use Selection Sort to sort the array: [29, 10, 14, 37, 13]"
+arr = [29, 10, 14, 37, 13]
+for i in range(len(arr)):
+    min_idx = i
+    
+    for j in range(i+1, len(arr)):
+        if arr[j] < arr[min_idx]:
+            min_idx = j
+
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+print(arr)
